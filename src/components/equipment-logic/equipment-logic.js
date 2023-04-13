@@ -2,6 +2,12 @@
 const generateHealth = () => {
   //bonus to health can range from 0 to 20 extra points
   let bonusToHealth = Math.floor(Math.random() * 21);
+  let tempNum = null;
+  for (let i = 0; i < 8; i++){
+    tempNum += Math.floor(Math.random() * 9);
+  }
+  console.log(tempNum);
+  return tempNum + bonusToHealth;
 };
 
 generateHealth();

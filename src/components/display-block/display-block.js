@@ -21,6 +21,8 @@ export default function DisplayBlock(props) {
                 {capitalizeFirstLetter(npc.class)}
               </div>
             </div>
+
+            <div className="npc-health"><span style={{ fontWeight: "bold" }}>Health:</span> {npc.health}</div>
             <div className="npc-equipment-row">
               <div style={{ fontWeight: "bold" }}>Equipment:</div>
               {npc.equipment.map((item, index) => {

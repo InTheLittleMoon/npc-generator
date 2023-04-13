@@ -8,6 +8,7 @@ import {
   getsShield,
   getsPotion,
   greaterItems,
+  generateHealth,
 } from "../equipment-logic/equipment-logic";
 
 export default function InputBlock(props) {
@@ -124,9 +125,10 @@ export default function InputBlock(props) {
         classNameArray[Math.floor(Math.random() * classNameArray.length)];
     }
 
-    //vets by class
+    //vets shield and equipment by class
     newField.potions = getsPotion();
     newField.magicalItems = greaterItems();
+    newField.health = generateHealth();
     newField.shield = getsShield(newField.class);
     newField.equipment = getEquipment(newField.class);
 
