@@ -1,0 +1,38 @@
+.input-block-container form {
+  display: flex;
+  flex-direction: column;
+  border: 3px double black;
+  border-radius: 15px;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.form-top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-top label {
+  margin-right: -15px;
+}
+
+.class-container {
+  display: flex;
+}
+
+.checkbox-grouping {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* checkbox-pair */
+.checkbox-pair-container {
+  display: flex;
+  margin: 2px 5px;
+}
+.checkbox-pair-container label {
+  width: 85px;
+}
