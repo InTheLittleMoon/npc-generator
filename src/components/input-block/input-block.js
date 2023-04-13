@@ -8,7 +8,7 @@ import {
   getsShield,
   getsPotion,
   greaterItems,
-} from "./equipment-logic";
+} from "../equipment-logic/equipment-logic";
 
 export default function InputBlock(props) {
   //states
