@@ -353,25 +353,154 @@ const wizard = {
 
 const backstoryGenerator = (targetClass) => {
   let temp = null;
+  let rng = null;
+  let tempKeys = null;
+  let tempVals = null;
 
   switch (targetClass) {
     case "artificer":
-      let rng = Math.floor(Math.random() * artificer.length);
-      let tempKeys = Object.keys(artificer);
-      let tempValues = Object.values(artificer);
-      return [tempKeys[rng], tempValues[rng]];
+      rng = Math.floor(Math.random() * 14);
+
+      //grabs key val
+      tempKeys = Object.keys(artificer);
+
+      //grabs desc val
+      tempVals = Object.values(artificer);
+
+      temp = [tempKeys[rng], tempVals[rng]];
+      return temp;
     case "barbarian":
+      rng = Math.floor(Math.random() * 14);
+
+      //grabs key val
+      tempKeys = Object.keys(barbarian);
+
+      //grabs desc val
+      tempVals = Object.values(barbarian);
+
+      temp = [tempKeys[rng], tempVals[rng]];
+      return temp;
     case "bard":
+      rng = Math.floor(Math.random() * 14);
+
+      //grabs key val
+      tempKeys = Object.keys(bard);
+
+      //grabs desc val
+      tempVals = Object.values(bard);
+
+      temp = [tempKeys[rng], tempVals[rng]];
+      return temp;
     case "cleric":
+      rng = Math.floor(Math.random() * 14);
+
+      //grabs key val
+      tempKeys = Object.keys(cleric);
+
+      //grabs desc val
+      tempVals = Object.values(cleric);
+
+      temp = [tempKeys[rng], tempVals[rng]];
+      return temp;
     case "druid":
+      rng = Math.floor(Math.random() * 14);
+
+      //grabs key val
+      tempKeys = Object.keys(druid);
+
+      //grabs desc val
+      tempVals = Object.values(druid);
+
+      temp = [tempKeys[rng], tempVals[rng]];
+      return temp;
     case "fighter":
+      rng = Math.floor(Math.random() * 14);
+
+      //grabs key val
+      tempKeys = Object.keys(fighter);
+
+      //grabs desc val
+      tempVals = Object.values(fighter);
+
+      temp = [tempKeys[rng], tempVals[rng]];
+      return temp;
     case "monk":
+      rng = Math.floor(Math.random() * 14);
+
+      //grabs key val
+      tempKeys = Object.keys(monk);
+
+      //grabs desc val
+      tempVals = Object.values(monk);
+
+      temp = [tempKeys[rng], tempVals[rng]];
+      return temp;
     case "paladin":
+      rng = Math.floor(Math.random() * 14);
+
+      //grabs key val
+      tempKeys = Object.keys(paladin);
+
+      //grabs desc val
+      tempVals = Object.values(paladin);
+
+      temp = [tempKeys[rng], tempVals[rng]];
+      return temp;
     case "ranger":
+      rng = Math.floor(Math.random() * 14);
+
+      //grabs key val
+      tempKeys = Object.keys(ranger);
+
+      //grabs desc val
+      tempVals = Object.values(ranger);
+
+      temp = [tempKeys[rng], tempVals[rng]];
+      return temp;
     case "rogue":
+      rng = Math.floor(Math.random() * 14);
+
+      //grabs key val
+      tempKeys = Object.keys(rogue);
+
+      //grabs desc val
+      tempVals = Object.values(rogue);
+
+      temp = [tempKeys[rng], tempVals[rng]];
+      return temp;
     case "sorcerer":
+      rng = Math.floor(Math.random() * 14);
+
+      //grabs key val
+      tempKeys = Object.keys(sorcerer);
+
+      //grabs desc val
+      tempVals = Object.values(sorcerer);
+
+      temp = [tempKeys[rng], tempVals[rng]];
+      return temp;
     case "warlock":
+      rng = Math.floor(Math.random() * 14);
+
+      //grabs key val
+      tempKeys = Object.keys(warlock);
+
+      //grabs desc val
+      tempVals = Object.values(warlock);
+
+      temp = [tempKeys[rng], tempVals[rng]];
+      return temp;
     case "wizard":
+      rng = Math.floor(Math.random() * 14);
+
+      //grabs key val
+      tempKeys = Object.keys(wizard);
+
+      //grabs desc val
+      tempVals = Object.values(wizard);
+
+      temp = [tempKeys[rng], tempVals[rng]];
+      return temp;
     default:
       return;
   }
