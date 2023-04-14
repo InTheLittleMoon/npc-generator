@@ -129,10 +129,7 @@ export default function InputBlock(props) {
     //vets shield and equipment by class
 
     //find out why they return undefined
-    let backstory = backstoryGenerator(newField.class);
-    console.log(backstory);
-
-
+    newField.backstory = backstoryGenerator(newField.class);
     newField.potions = getsPotion();
     newField.magicalItems = greaterItems();
     newField.health = generateHealth();
