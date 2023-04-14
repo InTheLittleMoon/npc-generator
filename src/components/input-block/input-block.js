@@ -10,6 +10,7 @@ import {
   greaterItems,
   generateHealth,
 } from "../equipment-logic/equipment-logic";
+import { backstoryGenerator } from "../backstory-logic/backstory-logic";
 
 export default function InputBlock(props) {
   //states
@@ -126,6 +127,12 @@ export default function InputBlock(props) {
     }
 
     //vets shield and equipment by class
+
+    //find out why they return undefined
+    let backstory = backstoryGenerator(newField.class);
+    console.log(backstory);
+
+
     newField.potions = getsPotion();
     newField.magicalItems = greaterItems();
     newField.health = generateHealth();
