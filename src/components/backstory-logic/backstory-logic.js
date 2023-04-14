@@ -2,30 +2,29 @@
 //change artificer stories as they match barbo's
 const artificer = {
   Acolyte:
-    "Proselytized Tribal: You are the former member of a secluded tribe that was converted to organized religion by missionaries. While your faith remains strong, your tribal origins occasionally show themselves, especially when you fight.",
+    "Honored Smith: You have spent your life in the service of a temple to a specific god or pantheon of gods. You act as a handyman for the most part, but are no stranger to participating in and performing sacred rites. You are not necessarily a cleric, but belief isn't solely bound to the annointed.",
   Charlatan:
-    "Fake Warrior: You've made a name for yourself as a great warrior. But it's all fluff with no substance, you just strike recklessly and hope to hit it right. And you've only had one or two battles in your life.",
+    "Cheapskate: You've made a name for yourself as a great warrior. Or thats what youd like most people to think. Yur inventions carried you most of the way, but at the end they answer to you alone. You've only had one or two battles in your life.",
   Criminal:
-    "Repo (Wo)Man: You worked for a crime family to ensure that all of the family's client's debts were paid on time.",
+    "Fraud: You worked for a smithing company, skimping on some parts to save on others.",
   Entertainer:
-    "Wrestler: You used your brute strength to gain the upper hand in wrestling tournaments and dazzle your adoring fans.",
-  Folk_Hero:
-    "Escaped Slave: Members of your isolated tribe were attacked and enslaved by a group of Drow slavers. You escaped, and lead an armed insurrection which freed a number of other slaves.",
+    "Pyro-technician: Your peculiar contraptions amaze all those that look into the sky and see the fireworks you seem to make from nothing.",
+  Folk_Hero: `You worked at an inn to cover your tab as you didn't have enough money for what you ordered. You cooked a stew and accidentally gave the vicious town overlord and his henchmen such a bad case of food poisoning that it kills them.`,
   Guild_Artisan:
-    "Stone Mason: You worked for a Stonemasonry guild, and used your great strength to crush and sculpt heavy stones.",
+    "Tanner: You worked for a tanning guild, and used your great expertise to produce some of the regions most luxurious furs.",
   Hermit:
-    "Exiled: In a fit of anger, you killed someone you shouldn't have. You were exiled, either by force or willingly, to atone for your crimes. After coming out of isolation, you try to keep your anger down, but failed to extinguish it entirely.",
+    "Mountaineer: In your wanderings, you have found a natural sanctum, hidden away in the wild. Only you know the directions to this place, and you can't be tracked or magically perceived in it.",
   Noble:
-    "Unwilling Heir: You are the member of a prominent royal family, and are destined to inherit a title when your elder passes. Despite this, aristocratic living grates you, and you spend your days hunting, wrestling, or fraternizing with the lower classes.",
+    "Prodigy: Your family has a title, but none of your ancestors have distinguished themselves since they gained it. You were a prodigy who demonstrated mastery of engineering at an early age. When you became old enough to set out on your own, you did so to learn more tinkering and expand your knowledge.",
   Outlander:
-    "Tribal: You came from an isolated tribe far away from civilization. You served your tribe as a great warrior and hunter.",
-  Sage: `Jekyll and Hyde: You're an old soul who has studied several things over your years. Although recently you've discovered the ability to infuse your body with inhuman strength. Now you're seeing where this new power guides you.`,
+    "Tomb Raider: While exploring an old tomb, library, or temple, you found a tinkering guide. You were immediately driven to learn all you could about becoming an artificer.",
+  Sage: "Bookworm: You were always an avid reader, and learned much about your favorite topic on your own, astronomy.",
   Sailor:
-    "Deck Hand: You were the member of a ship crew, and worked as a deck hand, carrying heavy goods and moving heavy cargo.",
+    "Stowaway: You had few prospects where you were living, so you left to find your fortune elsewhere.",
   Soldier:
-    "Infantry: You served as an infantry member for an army, and fought in numerous battles. Your reckless fighting earned you notoriety among your company.",
+    "Infantry: When you moved to a new city, a hermit artificer found you, took you in, and taught you the rudiments of the craft. After you had went on an adventure. You suffered a grievous injury. Although the wound healed, it still pains you from time to time.",
   Urchin:
-    "Asylum Patient: You were confined to a madhouse at a young age after a violent outburst. After being confined for a number of years, you escaped.",
+    "Survivor: You suffered a tragedy. War ravaged your home community, reducing everything to rubble and ruin. In the aftermath, you either helped your town rebuild or moved somewhere else.",
 };
 const barbarian = {
   Acolyte:
