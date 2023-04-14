@@ -6,7 +6,6 @@ const generateHealth = () => {
   for (let i = 0; i < 8; i++){
     tempNum += Math.floor(Math.random() * 9);
   }
-  console.log(tempNum);
   return tempNum + bonusToHealth;
 };
 
