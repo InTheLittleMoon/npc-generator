@@ -1,5 +1,4 @@
 //Random backstories tied to generic background options
-//change artificer stories as they match barbo's
 const artificer = {
   Acolyte:
     "Honored Smith: You have spent your life in the service of a temple to a specific god or pantheon of gods. You act as a handyman for the most part, but are no stranger to participating in and performing sacred rites. You are not necessarily a cleric, but belief isn't solely bound to the annointed.",
