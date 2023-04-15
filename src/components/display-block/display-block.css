@@ -43,3 +43,7 @@
   height: 20px;
   width: 20px;
 }
+
+.npc-background-title {
+  font-weight: bold;
+}
