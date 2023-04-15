@@ -106,7 +106,7 @@ export default function InputBlock(props) {
   };
 
   //packs input and predetermined choice(if any) into state held in parent component: displayArray
-  const submitHandler = () => {
+  const submitHandler = async () => {
     let newField = {
       name: inputVal,
       class: classType,
@@ -114,10 +114,8 @@ export default function InputBlock(props) {
 
     //handles no name input
     if (newField.name === "") {
-      let tempName = generateName();
-      tempName.then((promiseResult) => {
-        newField.name = promiseResult;
-      });
+      let tempName = await generateName();
+      newField.name = tempName;
     }
 
     //handles no radio selection / random option
@@ -130,7 +128,7 @@ export default function InputBlock(props) {
     newField.potions = getsPotion();
     newField.magicalItems = greaterItems();
     newField.health = generateHealth();
-    
+
     //vets shield and equipment by class
     newField.shield = getsShield(newField.class);
     newField.equipment = getEquipment(newField.class);
