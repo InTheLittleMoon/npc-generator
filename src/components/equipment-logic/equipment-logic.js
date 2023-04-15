@@ -1,4 +1,4 @@
-//health logic is small enough just to include here
+//health logic based on cr5 humanoids, averaging 8d8 + 10-20 health, blessing some npc's with incredible longevity
 const generateHealth = () => {
   //bonus to health can range from 0 to 20 extra points
   let bonusToHealth = Math.floor(Math.random() * 21);

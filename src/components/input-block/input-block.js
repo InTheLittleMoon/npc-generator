@@ -126,13 +126,12 @@ export default function InputBlock(props) {
         classNameArray[Math.floor(Math.random() * classNameArray.length)];
     }
 
-    //vets shield and equipment by class
-
-    //find out why they return undefined
     newField.backstory = backstoryGenerator(newField.class);
     newField.potions = getsPotion();
     newField.magicalItems = greaterItems();
     newField.health = generateHealth();
+    
+    //vets shield and equipment by class
     newField.shield = getsShield(newField.class);
     newField.equipment = getEquipment(newField.class);
 
