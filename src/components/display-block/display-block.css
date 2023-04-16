@@ -47,14 +47,11 @@
   align-items: flex-end;
   height: 30px;
   margin-top: 5px;
+  animation: hover 2s infinite;
 }
 
 .image {
   height: 30px;
-}
-
-.image:hover {
-  animation: hover 2s infinite;
 }
 
 @keyframes hover {
