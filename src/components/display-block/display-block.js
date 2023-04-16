@@ -10,6 +10,7 @@ export default function DisplayBlock(props) {
 
   return (
     <div className="display-container">
+      {/* maps out array with all npc blocks */}
       {props.displayArray.map((npc, index) => {
         return (
           <React.Fragment>
@@ -29,6 +30,7 @@ export default function DisplayBlock(props) {
               </div>
               <div className="npc-equipment-row">
                 <div style={{ fontWeight: "bold" }}>Equipment:</div>
+                {/* maps out all npc equipment elements */}
                 {npc.equipment.map((item, index) => {
                   return (
                     <div className="equipment" key={index}>
