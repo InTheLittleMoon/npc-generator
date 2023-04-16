@@ -49,7 +49,11 @@ export default function DisplayBlock(props) {
                 <span style={{ fontWeight: "bold" }}>Potions:</span>{" "}
                 {npc.potions}
               </div>
-              <DisplayBackstory backstory={npc.backstory} />
+              <DisplayBackstory
+                backstory={npc.backstory}
+                upArrow={props.upArrow}
+                downArrow={props.downArrow}
+              />
             </div>
           </React.Fragment>
         );

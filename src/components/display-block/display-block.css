@@ -24,7 +24,6 @@
 }
 
 /* backstory dropdown section */
-
 .backstory-container {
   width: 100%;
   height: fit-content;
@@ -32,18 +31,34 @@
   flex-direction: column;
 }
 
+.npc-backstory-details-container {
+  margin-top: 10px;
+}
+
+.npc-background-title {
+  font-weight: bold;
+}
+
+/* vector image and animation */
+
 .img-container {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   height: 30px;
+  margin-top: 5px;
 }
 
-.img-container img {
-  height: 20px;
-  width: 20px;
+.image {
+  height: 30px;
 }
 
-.npc-background-title {
-  font-weight: bold;
+.image:hover {
+  animation: hover 2s infinite;
+}
+
+@keyframes hover {
+  50% {
+    transform: translateY(15%);
+  }
 }

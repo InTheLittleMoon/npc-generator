@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "./display-block.css";
 
 export default function DisplayBackstory(props) {
-  //held states
-  const [windowState, setWindowState] = useState(true);
+  const [windowState, setWindowState] = useState(false);
 
   const openWindow = () => {
     setWindowState(!windowState);
@@ -13,17 +12,17 @@ export default function DisplayBackstory(props) {
     <div className="backstory-container">
       <div onClick={openWindow} className="img-container">
         <img
+          className="image"
           alt=""
-          src="https://cdn0.iconfinder.com/data/icons/glyphpack/26/double-arrow-down-512.png"
+          src={windowState ? props.upArrow : props.downArrow}
         />
       </div>
-      <div
-        className="npc-backstory-details-container"
-        style={{ display: windowState ? "none" : "block" }}
-      >
-        <div className="npc-background-title">{props.backstory[0]}</div>
-        <div className="npc-background-description">{props.backstory[1]}</div>
-      </div>
+      {windowState && (
+        <div className="npc-backstory-details-container">
+          <div className="npc-background-title">{props.backstory[0]}</div>
+          <div className="npc-background-description">{props.backstory[1]}</div>
+        </div>
+      )}
     </div>
   );
 }

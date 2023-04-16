@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import "./App.css";
 import DisplayBlock from "./components/display-block/display-block";
 
+//for display-backstory
+import downArrow from "./assets/double-arrow-down.png";
+import upArrow from "./assets/double-arrow-up.png";
+
 //components
 import InputBlock from "./components/input-block/input-block";
 function App() {
-  //states
+  //state for held npc objects
   const [displayArray, setDisplayArray] = useState([]);
 
   return (
@@ -18,6 +22,8 @@ function App() {
         <DisplayBlock
           displayArray={displayArray}
           setDisplayArray={setDisplayArray}
+          upArrow={upArrow}
+          downArrow={downArrow}
         />
       </div>
     </div>

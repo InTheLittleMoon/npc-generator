@@ -3,6 +3,8 @@ import "./input-block.css";
 
 //components
 import RadioPair from "./radio-pair";
+
+//imported logic
 import {
   getEquipment,
   getsShield,
