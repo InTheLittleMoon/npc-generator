@@ -155,7 +155,7 @@ export default function InputBlock(props) {
       >
         {/* if no name, name generator API will make one */}
         <div className="form-top">
-          <label>Name: </label>
+          <label>Name:   </label>
           <input
             type="text"
             onChange={(event) => {
