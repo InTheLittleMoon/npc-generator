@@ -1,11 +1,20 @@
 //health logic based on cr5 humanoids, averaging 8d8 + 10-20 health, blessing some npc's with incredible longevity
+
 const generateHealth = () => {
   //bonus to health can range from 0 to 20 extra points
   let bonusToHealth = Math.floor(Math.random() * 21);
-  let tempNum = null;
-  for (let i = 0; i < 8; i++){
-    tempNum += Math.floor(Math.random() * 9);
+  let tempNum = 0;
+  let diceRolled = 0;
+
+  for (let i = 0; i < 8; i++) {
+    diceRolled = Math.floor(Math.random() * 8) + 1; // Proper d8
+    //console.log(`Rolling d8 for health: ${diceRolled}`);
+    tempNum += diceRolled;
   }
+
+  //console.log(`Bonus to health: ${bonusToHealth}`);
+  //console.log(`Current health total: ${tempNum}`);
+
   return tempNum + bonusToHealth;
 };
 

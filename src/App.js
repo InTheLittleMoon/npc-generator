@@ -8,6 +8,8 @@ import upArrow from "./assets/double-arrow-up.png";
 
 //components
 import InputBlock from "./components/input-block/input-block";
+
+// App component
 function App() {
   //state for held npc objects
   const [displayArray, setDisplayArray] = useState([]);
